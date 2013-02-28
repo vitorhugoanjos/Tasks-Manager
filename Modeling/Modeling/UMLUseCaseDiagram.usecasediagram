@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="57a392a5-2ef7-4916-a07d-9b955b6b923b" name="UMLUseCaseDiagram" linkedPackageId="0ef14d26-867e-4f7a-a950-ea8d9f04a373" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ae6d9f8b-8b9f-4b7b-babd-66bd019e4d83" name="Utilizador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d21460cf-af24-4fa8-a79a-2e08f6b6fab1" />
+        <targetEnds>
+          <association Id="967fc14d-5bba-4d05-b07f-a3de158acdff" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Criar Projeto" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="66bf4ccc-ec98-4fc9-bb86-0d57e6e2a247" LastKnownName="Criar Projeto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b48f9dc-e91a-491f-b86c-a427bf29cc90" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="65e269d5-4a80-4bf3-ad4c-1fea49e80b19" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f9c91e7c-0bd3-4887-bd4b-3c4f32d5f0c4" name="Criar Projeto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7199d888-0883-455b-8321-f8d2dc7b83c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cb6df1bc-15e0-4f8a-800a-08f7fc3f81d8" />
+          </association>
+          <association Id="446d816b-35e2-4d68-9a8c-11edf61434c5" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Criar tarefa" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec07c436-aae3-4d7e-904c-8ce308f1fd3b" LastKnownName="Criar tarefa" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d063e437-0f81-4088-b768-6a844cbf6bc4" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="766f2e0c-0385-47e9-82c1-fb763385c813" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf3807a7-ccd8-4282-b29b-2a23dd853b83" name="Criar tarefa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e45017b8-9a98-4378-a40c-422dccc5a1e7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="90776abb-8c41-4ff0-80b1-781cba09e2ac" />
+          </association>
+          <association Id="87824737-a502-4e79-99bc-7360a2dec0bf" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Listar tarefa" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9c85fed4-3075-4390-acbf-3ecd38222a22" LastKnownName="Listar tarefa" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7d93b00-6280-4580-a104-ba13d24b973f" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b7d2430-242b-4f74-867c-fad318a643a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18f10555-a1f9-45db-9ee3-4998d72ec72e" name="Listar tarefa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a2b573c-7989-4daf-9474-f3fa2f0940dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9930b60e-2700-4d18-afaa-e60966f24200" />
+          </association>
+          <association Id="a68af67a-713a-47f0-b08d-4a4ee23f750f" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Visualizar projeto" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b8c6e9af-a3aa-4595-8676-716075044212" LastKnownName="Visualizar projeto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d4571e5-8fd6-45a6-9e3f-7e1c8f57cebf" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3b41f5d4-cb36-4cfe-89f6-94ca262c94c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eaa2d9ef-b1a6-43c3-930f-0b8ab924cb1a" name="Visualizar projeto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="da7b45d0-1b21-4f84-986c-66d9424028ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="715483a8-fece-4e17-bd94-9c15cb213e82" />
+          </association>
+          <association Id="3a73349e-783a-46dc-b312-f64602cd1be2" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Importar ficheiro" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fec41e05-f91e-423f-b3d9-a67d0f374a80" LastKnownName="Importar tarefa" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a39865ad-0626-4944-88b0-cdfbb0fadbff" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8c399765-f19f-448b-8f12-75d01d73cb6b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="31ceeaa6-3ca4-43fc-8b7a-dfcdaaef22ce" name="Importar ficheiro" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f5cfec10-f072-4c68-b47e-273d7254050e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cf490253-01ad-4790-98c8-68e69ae71319" />
+          </association>
+          <association Id="0a6b5945-e4ff-4fd4-aaf3-d90c935a0f8b" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Exportar ficheiro" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7ee13851-163e-4147-978f-30675600dd73" LastKnownName="Exportar tarefa" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83b7b25a-d4f1-46ff-92e2-a3eab0d587fc" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8b06868f-ffbc-431a-8e8e-6e5d4732461e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="17a0a760-b4e4-4fd6-b28f-6ad6fdd3ea2c" name="Exportar ficheiro" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ff2c9d6b-b92e-4501-9cf9-6bc47d769c9c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7508ebb4-4758-42ac-bc83-a149d9aeb349" />
+          </association>
+          <association Id="7505ee7f-39d5-49c5-986e-3065a609560c" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Inserir Informação" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cf46562f-dd19-4ad8-b6d3-8499e723f7aa" LastKnownName="Inserir Informação" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4ad0f52-56ed-4505-b732-31ced0ab1df3" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a031d039-68a5-4a91-a443-17aee2cd6897" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29398fe1-4be5-4997-929c-6751786f32a1" name="Inserir Informação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7b55970c-2a95-4065-be6a-e8ee5f51aa60" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1924fda1-dcdb-454a-91cf-d48da3d55920" />
+          </association>
+          <association Id="7d0ed874-fa2d-40fc-b725-36950624d4d8" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Modificar Informação" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1d6bd055-73bc-4be2-91c5-d23e9d7c1f97" LastKnownName="Modificar Informação" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6cfd3831-a5da-41cc-b845-efbe93d07512" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9f08d505-365f-4155-aa0d-a39e53a21721" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f1d3047-ed1d-4984-a3e1-83adde48a8bc" name="Modificar Informação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="138c6861-f132-4d09-a6fe-830b9ade6520" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="954374db-f192-4fe3-8bf5-74c87ea67a23" />
+          </association>
+          <association Id="e702e77e-ad7b-4713-84f9-2ed1367f78b3" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Eliminar Informação" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="63e64545-c0c1-4368-b1d1-7ae10852aa0a" LastKnownName="Eliminar Informação" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="267c7c12-72ce-4512-a20c-de965fda7a24" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ee1e7e5e-df7e-4632-9445-5d853df06a00" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6230008a-be67-4dad-ad1c-11f3965c1011" name="Eliminar Informação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="557d74b7-aab1-4f54-a7aa-cf967e16fe96" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fe0cbe39-89a5-41fc-8441-0d4b4a74bcfd" />
+          </association>
+          <association Id="e7be1179-91df-435d-893d-fc9d28d88127" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Listar Informação" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9947e283-cf51-4c58-9139-145141b8bd46" LastKnownName="Listar Informação" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18a9377e-e34b-44eb-bfcf-af94c7300b0b" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4d9729f7-7fa8-4585-80d2-dae4c0979fcf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="791e47ec-49c0-4c39-903f-7ba03da5fe4c" name="Listar Informação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8958cba0-bd74-4e71-b0fb-c34ef6e779e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eeab0e98-b643-42c1-9a61-f61b840935dc" />
+          </association>
+          <association Id="29b2b2ce-b355-40a6-bfc6-7285a8c2c16c" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Visualizar ações dependentes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c1954206-d9d8-4379-93f3-cc0d4fff582f" LastKnownName="Visualizar ações dependentes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7661c750-5654-449c-8d72-5d20c61c7c3e" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e066b64a-1eae-4e72-befa-e6736f590dcd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="943f908c-4797-4ea6-b3dc-34c45117c0ac" name="Visualizar ações dependentes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="98c42078-6909-45be-9452-ba5817258ba5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7e38bb6f-a8e8-4de1-ad5e-15a0c456b7c7" />
+          </association>
+          <association Id="ab800deb-5dca-462d-a10a-8db9abcea36b" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Visualizar ações delegadas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9e6c4d37-f488-4273-9d7f-33c658fe3158" LastKnownName="Visualizar ações delegadas" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a54f295-119e-489b-af73-5999aeb5335a" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="643c0ba7-74a2-4fb3-a253-e323038658f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b8ce351d-89f0-4397-9b5f-bbc2a4ccd942" name="Visualizar ações delegadas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="358d48ef-3840-4bb0-80cd-b3828570d564" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="75c1fcd2-cb35-41ae-8283-e9398f8a924c" />
+          </association>
+          <association Id="253a6a08-8e27-4bbe-99b5-1788d62954d8" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Alterar Tarefa" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1838d27e-4df1-4c93-a271-510b9db23741" LastKnownName="Alterar Tarefa" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3fa898b-9e00-4934-8064-f4d6c1ed6b0f" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1f3fba5-d0ae-4b02-82a3-9f8c5efcc98f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="51f71d2a-e4b0-4d1e-abe6-d540ea7174e9" name="Alterar Tarefa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="690743fb-bf18-4171-a6f3-b6c1e8260418" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f0b7bcd9-d7e4-4fbc-b269-a4c73f14a594" />
+          </association>
+          <association Id="43eedac4-be63-486c-8569-6db18164f2f8" isDerived="false" sourceEndRoleName="Utilizador" targetEndRoleName="Integrar listas de tarefas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b47c7796-f654-4adf-b682-ace725d27100" LastKnownName="Integrar listas de tarefas" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6201dbb8-2d85-47ec-9e2c-d214d7c6b712" name="Utilizador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="531798c2-7428-4e71-8810-fd6a777d26db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1c0c91ae-5589-4670-b501-24856fbe651d" name="Integrar listas de tarefas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ca21d0d7-b9bc-41c1-acbc-0bf76060872f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="01c5ea2c-4690-4207-9de5-2d5fedc4a544" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="66bf4ccc-ec98-4fc9-bb86-0d57e6e2a247" name="Criar Projeto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c43cc19-8ef4-4771-8148-fd0f24eae962" />
+        <additions>
+          <include Id="0d5e540f-11b0-4053-9ad5-27b41c597da1">
+            <useCaseMoniker Id="46052ef3-1448-4856-aa15-ae683cc6ea00" LastKnownName="Agrupar tarefas" />
+            <elementDefinition Id="67100383-bb4a-44f2-9bee-aa3f0db7ee94" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="46052ef3-1448-4856-aa15-ae683cc6ea00" name="Agrupar tarefas" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cbe2e710-0c82-47fb-882f-41d3a15e49e2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ec07c436-aae3-4d7e-904c-8ce308f1fd3b" name="Criar tarefa" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef2977a3-2a8c-478b-8c20-54f5ccc7c834" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9c85fed4-3075-4390-acbf-3ecd38222a22" name="Listar tarefa" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bcb3a44f-16d8-4aa4-9f20-14baff561f13" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b8c6e9af-a3aa-4595-8676-716075044212" name="Visualizar projeto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="52e8243d-d285-4648-b54f-e13c7fcebecf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c1954206-d9d8-4379-93f3-cc0d4fff582f" name="Visualizar ações dependentes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5da0ae82-bd72-47b2-83dd-21b03f77d490" />
+        <extendedCases>
+          <extend Id="92ec74db-48cc-4d40-9900-0ef740afe1b5">
+            <useCaseMoniker Id="b8c6e9af-a3aa-4595-8676-716075044212" LastKnownName="Visualizar projeto" />
+            <elementDefinition Id="481e236e-b5e9-45e9-9209-d4b24c8c5f0b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fec41e05-f91e-423f-b3d9-a67d0f374a80" name="Importar tarefa" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed02d8e1-4835-4b8d-a57f-05a96f94da33" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7ee13851-163e-4147-978f-30675600dd73" name="Exportar tarefa" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b1b62832-3ef1-4b20-ab3b-ba663afe970f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cf46562f-dd19-4ad8-b6d3-8499e723f7aa" name="Inserir Informação" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6529338a-8547-496a-8f35-9063c43b7d3f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1d6bd055-73bc-4be2-91c5-d23e9d7c1f97" name="Modificar Informação" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a7cc378-32bf-416d-bdde-961cea86c80e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="63e64545-c0c1-4368-b1d1-7ae10852aa0a" name="Eliminar Informação" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0290b89-f36e-4baa-a0bc-4b9ebd3ed69c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9947e283-cf51-4c58-9139-145141b8bd46" name="Listar Informação" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dec04e12-343f-40a7-9db1-ce4b7005dda1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9e6c4d37-f488-4273-9d7f-33c658fe3158" name="Visualizar ações delegadas" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="edc82c37-540d-459a-83ba-cd0830d07638" />
+        <extendedCases>
+          <extend Id="993bdd9c-19d9-4e17-bba7-3597b258e49a">
+            <useCaseMoniker Id="b8c6e9af-a3aa-4595-8676-716075044212" LastKnownName="Visualizar projeto" />
+            <elementDefinition Id="e3b174d1-0d59-4c83-90a1-b7fd76a8b87d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1838d27e-4df1-4c93-a271-510b9db23741" name="Alterar Tarefa" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d45c8618-4b69-499c-8764-df434bfbd24c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b47c7796-f654-4adf-b682-ace725d27100" name="Integrar listas de tarefas" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="148efecb-0f6a-4150-b911-8ba0fa03ceec" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0ef14d26-867e-4f7a-a950-ea8d9f04a373" name="Modeling">
+    <elementDefinition Id="cc547958-9d40-47d8-a9b3-91055f27cb87" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e8f5b861-4a06-4bea-9db5-8f76a81727f3">
+        <profileInstance Id="61ad7110-8629-4fb8-93ed-00cdf6fc45ca" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="74af5f40-a734-4874-bbc9-ed98be3e2c0d">
+        <profileInstance Id="d55e2950-f7ac-4c89-8989-a81074af8cfd" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

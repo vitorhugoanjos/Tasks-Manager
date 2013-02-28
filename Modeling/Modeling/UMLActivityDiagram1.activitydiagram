@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="f54905b3-3309-4383-a277-581c52e05996" name="Activity1" linkedPackageId="9d52b1dd-a396-4ef2-a133-210243fec319" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="5ff657cd-5941-448a-bebf-54066c1291d2" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="943d0a6b-a7ab-4507-a908-e7e0c8abcff8" />
+        <nodes>
+          <initialNode Id="4c9b511f-f160-47c1-aca9-c22355f7beb8" name="Initial1" isLeaf="false">
+            <elementDefinition Id="ae5032c3-0ea8-4d2c-89b2-7b232d3470a2" />
+            <flowNodeTargets>
+              <controlFlow Id="f72d7da3-f488-44f9-beae-fbe875930b56" isLeaf="false">
+                <opaqueActionMoniker Id="7000d480-1e93-42c2-8d3b-021c58e47a07" LastKnownName="Inserir atributos específicos do projeto" />
+                <elementDefinition Id="0abc1f6e-c8cc-4ae9-93c9-c0b0f6c07a7d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <objectNode Id="2275c3ea-2691-4160-8915-c5b3f77607f7" name="Projeto" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="fd2575a0-6e39-4681-9b47-db4fe1c568b1" />
+            <upperBound>
+              <literalInteger Id="b05a4bc4-3b9d-4d7c-ac65-d29a74d24d8d" name="2147483647" value="2147483647">
+                <elementDefinition Id="81c049ec-fa17-4808-bf72-52dea06419ad" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="7000d480-1e93-42c2-8d3b-021c58e47a07" name="Inserir atributos específicos do projeto" isLeaf="false">
+            <elementDefinition Id="3d5f58ea-1668-45d8-b761-56f78b73d1ad" />
+            <flowNodeTargets>
+              <controlFlow Id="82c32332-a739-454b-b7db-01e8c7b5d192" isLeaf="false">
+                <joinNodeMoniker Id="22f3d49d-aa0f-48c1-9746-eac0b1b6d372" LastKnownName="Join1" />
+                <elementDefinition Id="3b32a67e-aff1-4240-989e-d04b5860bd01" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="27b52bc5-51bd-4140-b02b-9db58fdfcf77" name="Tarefa" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="1d676845-0b60-41a5-b8a3-7acec2aacdb8" />
+            <upperBound>
+              <literalInteger Id="9c2f78b0-a0ff-4652-981b-92244fc8a8f8" name="2147483647" value="2147483647">
+                <elementDefinition Id="2a0480c1-e425-42cb-be23-92470515deda" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <decisionNode Id="850db892-0510-49fd-8322-d03cec33a42b" name="Usar tarefa existente" isLeaf="false">
+            <elementDefinition Id="a7f8662a-b621-4c3c-a4d5-e4907fbd7647" />
+            <flowNodeTargets>
+              <controlFlow Id="d5ec9e54-f14e-4dba-9d3e-aabdf1108258" guard="Não usar a tarefa existente" isLeaf="false">
+                <opaqueActionMoniker Id="04ea1cb6-ac73-4471-b56a-061305d04608" LastKnownName="Procurar informação" />
+                <elementDefinition Id="b643d960-91b7-46c5-ac62-7a870528a823" />
+              </controlFlow>
+              <controlFlow Id="026f4d13-8539-4449-9f74-f5f7535b6e8c" guard="Usar a tarefa existente" isLeaf="false">
+                <opaqueActionMoniker Id="e056c816-5c43-4215-8048-2e8ca0a8a03c" LastKnownName="Obtem tarefa" />
+                <elementDefinition Id="f7659e69-818f-4373-b8af-3f6751099f88" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <objectNode Id="e38917ea-5244-49ac-8651-5f0871df52f7" name="Informação" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="3e561488-4883-4f2d-af7d-c3948505ce05" />
+            <upperBound>
+              <literalInteger Id="3817f922-6723-43f2-84d5-5243876f2a60" name="2147483647" value="2147483647">
+                <elementDefinition Id="6efeb76a-883f-4a17-8d19-b9b0fed1f54e" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="04ea1cb6-ac73-4471-b56a-061305d04608" name="Procurar informação" isLeaf="false">
+            <elementDefinition Id="2095e3f9-db5d-49ec-8683-b8c00c30d294" />
+            <flowNodeTargets>
+              <controlFlow Id="30a02751-f75e-4764-8b9e-d2c7e53dc1ed" isLeaf="false">
+                <opaqueActionMoniker Id="7d5cfa02-c1f2-43d0-a15d-2e0a97459688" LastKnownName="Criar tarefa" />
+                <elementDefinition Id="928af6f1-bc97-49f1-b58e-e409ae44457e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e056c816-5c43-4215-8048-2e8ca0a8a03c" name="Obtem tarefa" isLeaf="false">
+            <elementDefinition Id="7c7c43ca-759f-4f22-ab9f-2105f04bca40" />
+            <flowNodeTargets>
+              <controlFlow Id="b9e37647-da13-49f6-a97e-b5a52ed94e5e" isLeaf="false">
+                <opaqueActionMoniker Id="1f7fac58-733d-4ee0-925a-98dc1295632e" LastKnownName="Associar tarefa ao projeto" />
+                <elementDefinition Id="08fcbaa9-d5a3-4dd3-82cd-a5a4df26a431" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7d5cfa02-c1f2-43d0-a15d-2e0a97459688" name="Criar tarefa" isLeaf="false">
+            <elementDefinition Id="53a8e4c3-8565-41c6-ac3a-c4f78cdc2c20" />
+            <flowNodeTargets>
+              <controlFlow Id="c03cdd2f-656f-44eb-b85e-fcee9d105d38" isLeaf="false">
+                <opaqueActionMoniker Id="1f7fac58-733d-4ee0-925a-98dc1295632e" LastKnownName="Associar tarefa ao projeto" />
+                <elementDefinition Id="59d56086-08a9-4698-88f0-3f6c3300a90a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1f7fac58-733d-4ee0-925a-98dc1295632e" name="Associar tarefa ao projeto" isLeaf="false">
+            <elementDefinition Id="eaf27889-7d70-4ec4-8f10-c908aa7179d1" />
+            <flowNodeTargets>
+              <controlFlow Id="d3a6606c-3f85-4406-98ad-fd6fb1239e89" isLeaf="false">
+                <opaqueActionMoniker Id="3474a9d4-ec05-425c-a223-c58a2219466e" LastKnownName="Organizar lista de tarefas" />
+                <elementDefinition Id="b22229c5-489d-4681-881d-7d2d1855a412" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3474a9d4-ec05-425c-a223-c58a2219466e" name="Organizar lista de tarefas" isLeaf="false">
+            <elementDefinition Id="dc09cca1-fb9a-4e27-91da-222ec40f468a" />
+            <flowNodeTargets>
+              <controlFlow Id="514dca81-e90c-4ce3-9468-c9b19b520cd3" isLeaf="false">
+                <decisionNodeMoniker Id="1ab978e9-6c86-41b1-8ced-fb8acd8715f1" LastKnownName="Decision1" />
+                <elementDefinition Id="5bdf28c1-59b8-4bd0-8c77-d9865b5345df" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="1ab978e9-6c86-41b1-8ced-fb8acd8715f1" name="Decision1" isLeaf="false">
+            <elementDefinition Id="3586a03d-8aec-4051-af40-595ab145beec" />
+            <flowNodeTargets>
+              <controlFlow Id="79dd6b53-c3e8-42ff-b68c-87c3e3ee7f2b" guard="Não adicionar mais tarefas" isLeaf="false">
+                <activityFinalNodeMoniker Id="15fec96c-131d-4d43-89a1-b8a50ccd9b52" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="2fe66714-ff50-47e7-8bfd-cfb0def0ffc7" />
+              </controlFlow>
+              <controlFlow Id="37e02dd6-ea07-4904-9937-f38e19344b5c" guard="Adicionar mais tarefas" isLeaf="false">
+                <joinNodeMoniker Id="22f3d49d-aa0f-48c1-9746-eac0b1b6d372" LastKnownName="Join1" />
+                <elementDefinition Id="5b0a5b93-070b-4007-9007-34ee6792c325" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="15fec96c-131d-4d43-89a1-b8a50ccd9b52" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="9e1bbb6f-fb33-4c4d-befd-b9e2bd54cd5e" />
+          </activityFinalNode>
+          <joinNode Id="22f3d49d-aa0f-48c1-9746-eac0b1b6d372" name="Join1" isLeaf="false">
+            <elementDefinition Id="c4c78667-7757-4166-aff2-e60d907a032b" />
+            <flowNodeTargets>
+              <controlFlow Id="9d5387b2-d73d-47ad-b6a6-da7b0364f65d" isLeaf="false">
+                <decisionNodeMoniker Id="850db892-0510-49fd-8322-d03cec33a42b" LastKnownName="Usar tarefa existente" />
+                <elementDefinition Id="9b3a9a85-6639-4938-891d-591647b03758" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="9d52b1dd-a396-4ef2-a133-210243fec319" name="Modeling">
+    <elementDefinition Id="cc547958-9d40-47d8-a9b3-91055f27cb87" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ce3a01b7-7ea0-4eec-9743-18ff081c991e">
+        <profileInstance Id="886271f7-d3d3-4f0e-8b93-07bd6abb76cd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e62c95ef-e5fd-4f5a-96c5-c505f43e9089">
+        <profileInstance Id="a781b212-a59e-462f-b5cc-85ed7cf5f71b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
